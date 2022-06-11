@@ -1,0 +1,26 @@
+.one {
+    background-color: #181818;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 20px 40px 20px 40px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.inside-one {
+    background-color: #414141;
+    margin-top: 20px;
+    padding: 20px 40px 20px 70px;
+}
+
+.one img {
+    width: 100px;
+    height: 100px;
+    max-width: max-content;
+    max-height: max-content;
+    border: 2px solid #ffffff;
+}
+
