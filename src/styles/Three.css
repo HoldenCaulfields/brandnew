@@ -1,0 +1,28 @@
+.books {
+    position: absolute;
+    top: 0;
+    width: 500px;
+    height: 500px;
+    /* overflow: hidden; */
+    left: 30%;
+    /* animation: spin 5s linear infinite; */
+    animation: tick-tick 1s linear;
+}
+
+.books img {
+    width: 100px;
+    height: 150px;
+    margin-right: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: 1s linear;
+    -webkit-box-shadow: 5px 5px 2px rgb(112, 112, 112);
+    box-shadow: 5px 5px 2px rgb(112, 112, 112);
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+
+.books img:hover {
+    z-index: 20;
+    
+}

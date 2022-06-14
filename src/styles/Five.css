@@ -1,0 +1,13 @@
+.the-last {
+    background-color: rgba(127, 255, 212, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.random-stuff {
+    transition: 2s linear;
+}
+
