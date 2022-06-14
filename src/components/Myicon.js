@@ -9,7 +9,7 @@ import Five from "./Five";
 
 const Myicon = (props) => {
 
-    console.log(props.option);
+    // console.log(props.option);
 
     return (
         <>

@@ -27,6 +27,10 @@ const One = () => {
         'https://lh3.googleusercontent.com/fehDqa9bSLpPfEslSib9eWZIFZqWHQ29pwp7JbaVGTxwByTKjfNmjFNQI6rh2AHPawJTzHv5YsTN2Pwb8QDFJQlGBduch5gQeq5_P5zwZdWoexB80naioBcuPGykhKMQ-fHHyvOZAzZlMrqP7ue60AjepYkedUBYJnCpbWyq0UadiMOifVHxFLWuCRDpNPjh2Fh6IOYrUp-NJF2Sx5ETwj7INgqpCZNuIz7mz-zN6-TmXwpidRhQYZzovgcPTxy8QDhUIjAED_gFEgfhoeqZFRWIOa-3UmhHzx1VJ6MzxYeO5DOqKOxU88lxjCJmypSQ6f22o0PoF_amO0UJRSnr4YGqxFYRiy34o5b6_n3EMwziOgfrqnqfBGMtNs8qpEGNodRwxLsX83pk2wxbQq61-4McbAwP-CQFc4p7v_t4Tbv-QPKTk41u1gWwdSmiO50hPucf7ScOBCF_NVfYCEzVU2WrJbvBxZSPH41K45gcok6RFjIj9vjoDcvdNvX2ksNUMqv1wHfSGwA3nBezhKZmRG-rdJeG2rSC7S1JOM91OyK9OOEI-lQWLfykIvyY0ZgKD51QOnE2IAOxEWEEKZqn4WyvEmUSl69nwtLrhiJTS7994W8PbIQtSlc_XmAr66MEo2hVd86KW7S2kRgEM9KYx5VW4cCPomJsZljCBl7IkoqgojmoZiywzIgSgSf9H8fYCGsQnE6r4oC9tnsXSLVbHrC1aFI8KN1vQMNFtDXzFMOc7rmE0bETpF5_m0YhwHU3bkHYDSskSJAAnTirTQpjJg9G_d5CQ8dj=w493-h657-no?authuser=1',
     ];
 
+    const handleClick = () => {
+        document.getElementsByClassName('one')[0].classList.toggle('hidding');
+    }
+
     return (
         <>
             <div className="one">photos
@@ -35,7 +39,9 @@ const One = () => {
                         (item, index) => <img src={item} key={index} alt='sdgf'/>
                     )}
                 </div>
+                <div className="close" onClick={handleClick} ></div>
             </div>
+            
         </>
     );
 }
