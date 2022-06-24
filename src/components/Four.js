@@ -107,7 +107,9 @@ const Four = () => {
                     )}
                 </ul>
             
+                <div className="close" onClick={() => document.getElementsByClassName('movies')[0].classList.toggle('hidding')} ></div>
             </div>
+
         </>
     );
 }

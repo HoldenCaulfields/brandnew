@@ -62,7 +62,9 @@ const Five = () => {
         
         <audio autoPlay>
                 <source src={evil} type="audio/mp3" />
-        </audio>    
+        </audio>   
+
+            <div className="close" onClick={() => document.getElementsByClassName('the-last')[0].classList.toggle('hidding')} ></div>
         </div>
     );
 }
