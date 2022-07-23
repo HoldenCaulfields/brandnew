@@ -17,9 +17,11 @@ const CenterName = () => {
   }
 
   return (
-    <div className="name" >
-      <h1 onClick={handleClick}>trung thuc</h1>
-      <div className="circle" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}></div>
+    <div className="centername-container">
+      <div className="name" >
+        <h1 onClick={handleClick}>trung thuc</h1>
+        <div className="circle" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}></div>
+      </div>
     </div>
   );
 }

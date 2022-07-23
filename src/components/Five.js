@@ -56,15 +56,15 @@ const Five = () => {
    
     return (
         <div className="the-last" onMouseMove={thh} >
-        {RandomArrayShuffle(photos).map(
-            (item,index)=> <img className="random-stuff" src={item} key={index} id={index} alt='dsfds' />
-        )}
-        
-        <audio autoPlay>
-                <source src={evil} type="audio/mp3" />
-        </audio>   
+            {RandomArrayShuffle(photos).map(
+                (item,index)=> <img className="random-stuff" src={item} key={index} id={index} alt='dsfds' />
+            )}
+            
+            <audio autoPlay>
+                    <source src={evil} type="audio/mp3" />
+            </audio>   
 
-            <div className="close" onClick={() => document.getElementsByClassName('the-last')[0].classList.toggle('hidding')} ></div>
+            <div className="close" onClick={() => document.getElementsByClassName('the-last')[0].style.display="none"} ></div>
         </div>
     );
 }

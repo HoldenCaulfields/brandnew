@@ -9,3 +9,80 @@
 body {
     background-color: rgba(0, 0, 0, 0.966);
 }
+
+@media screen and (max-width: 680px) {
+
+    h1 {
+        font-size: 600%;
+    }
+
+    .one img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .musics {
+        height: 40%;
+    }
+    .musics img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .piano {
+        left: 40%;
+    }
+    .table {
+        left: -5%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .piano {
+        left: 32%;
+        width: 65%;
+    }
+    .table {
+        left: -5%;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 680px) {
+    .piano {
+        left: 10%;
+        width: 80%;
+    }
+    .table {
+        display: none;
+    }
+}
+@media screen and (max-width: 560px) {
+    .piano {
+        left: 5%;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .piano {
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* three:books */
+@media screen and (max-width: 1075px) {
+    .books {
+        left: 20%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .books {
+        left: 18%;
+    } 
+}
+@media screen and (max-width: 530px) {
+    .books {
+        top: 20%;
+    } 
+}

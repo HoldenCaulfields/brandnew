@@ -66,13 +66,15 @@ const Three = () => {
         },[spin,nnn]);
 
     return (
-        <div className="books" onClick={handleSpin} >{spin}
-            {books.map(
-                (item,index)=> <img className="book" src={item} key={index} id={index} alt="book" />
-            )}
+        <div className="container-three">
+            <div className="books" onClick={handleSpin} >{spin}
+                {books.map(
+                    (item,index)=> <img className="book" src={item} key={index} id={index} alt="book" />
+                )}
 
-            <div className="close" onClick={() => document.getElementsByClassName("books")[0].classList.toggle("hidding")} ></div>
+                <div className="close" onClick={() => document.getElementsByClassName("container-three")[0].style.display = "none"} ></div>
 
+            </div>
         </div>
     );
 }

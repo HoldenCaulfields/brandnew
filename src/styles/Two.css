@@ -1,5 +1,4 @@
 .allatone {
-    background-color: rgba(180, 255, 245, 0);
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -9,11 +8,12 @@
 
 .table {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     width: 400px;
     height: 400px;
     background-image: url('../images/table.png');
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* PIANO class */
@@ -41,14 +41,16 @@
     height: 60%;
     position: absolute;
     bottom: 5%;
-    margin-left:25px;
+    margin-left: 3%;
+    display: flex;
 }
 
 .note {
     background-color: rgb(255, 255, 255);
     width: 6.9%;
     height: 100%;
-    float: left;
+    flex-grow: 1;
+    
     position: relative;
     border-left: 2px solid black;
     border-top: 2px solid black;

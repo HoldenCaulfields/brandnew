@@ -108,7 +108,7 @@ const Two = () => {
 
             <ReactAudioPlayer src={whereismymind} autoPlay/>
 
-            <div className="close" onClick={() => document.getElementsByClassName('allatone')[0].classList.toggle('hidding')} ></div>
+            <div className="close" onClick={() => document.getElementsByClassName('allatone')[0].style.display ="none"} ></div>
         </div>
     );
 }

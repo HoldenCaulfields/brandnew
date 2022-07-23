@@ -1,12 +1,17 @@
+.centername-container {
+    height: 100vh;
+}
+
 .name {
     position: relative;
-    margin-top: 10%;
-    
+    width: fit-content;
+    margin: auto;
+    top: 50%;
+    transform: translate(0,-100%);
 }
 
 h1 {
     color: white;
-    
     text-transform: uppercase;
     text-align: center;
     font-size: 800%;

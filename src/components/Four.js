@@ -3,7 +3,6 @@ import scroll from '../images/arr.png';
 import nexticon from '../images/next.png';
 import '../styles/Four.css';
 import { useState , useEffect} from "react";
-import battleroyale from '../images/battleroyale.mp3';
 
 const Four = () => {
 
@@ -86,11 +85,8 @@ const Four = () => {
     },[mmm, count]); 
 
     return (
-        <>
-            <audio autoPlay>
-                    <source src={battleroyale} type="audio/mp3" />
-            </audio>
-
+        <div className="testresponsive">
+            
             <div className="move-take" onMouseDown={handleMouseDownTake} onMouseMove={handleMouseMoveTake} 
             onMouseLeave={handleMouseOutTake} onClick={handleClickTake}>
                 {arrtake.map(
@@ -107,10 +103,10 @@ const Four = () => {
                     )}
                 </ul>
             
-                <div className="close" onClick={() => document.getElementsByClassName('movies')[0].classList.toggle('hidding')} ></div>
+                <div className="close" onClick={() => document.getElementsByClassName('movies')[0].style.display = "none"} ></div>
             </div>
 
-        </>
+        </div>
     );
 }
 

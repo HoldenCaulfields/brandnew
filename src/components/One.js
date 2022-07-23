@@ -30,17 +30,16 @@ const One = () => {
     
 
     return (
-        <>
+        <div className="container-one">
             <div className="one">photos
                 <div className="inside-one">
                     {list.map(
-                        (item, index) => <img src={item} key={index} alt='sdgf'/>
+                        (item, index) => <img src={item} key={index} alt='mcr'/>
                     )}
                 </div>
-                <div className="close" onClick={() => document.getElementsByClassName('one')[0].classList.toggle('hidding')} ></div>
+                <div className="close" onClick={() => document.getElementsByClassName('container-one')[0].style.display ="none"} ></div>
             </div>
-            
-        </>
+        </div>
     );
 }
 

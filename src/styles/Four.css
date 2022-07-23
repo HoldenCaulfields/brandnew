@@ -9,6 +9,7 @@
     -webkit-box-reflect: below 2px linear-gradient(transparent,transparent, rgba(0, 0, 0, 0.333));
     border-radius: 20px;
     border: rgb(58, 63, 35) 2px solid;
+    z-index: 20;
 }
 
 .move-take img {
@@ -44,6 +45,7 @@
     height: 500px;
     overflow: hidden;
     animation: tick-tick 1s linear;
+    
 }
 .movies img {
     width: 250px;
@@ -53,8 +55,8 @@
     /* transform: translate(-4420px,0); */
 }
 .list-movies {
-    width: 900%;
+    width: 1800%;
+    left: -560%;
     position: absolute;
     top: 0;
-    left: -114%;
 }
